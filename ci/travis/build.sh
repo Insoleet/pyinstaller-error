@@ -5,7 +5,7 @@ eval "$(pyenv virtualenv-init -)"
 
 cd $HOME/build/ucoin-io/sakia
 pyenv activate sakia-env
-pip install lbnacl
+pip install libnacl
 pip install pylibscrypt
 pip install base58
 
