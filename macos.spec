@@ -19,8 +19,8 @@ a.binaries = a.binaries - TOC([
 print(a.binaries)
 
 a.binaries = a.binaries + TOC([
-('libsodium.dylib',
-os.path.join(get_homebrew_path( formula='libsodium' ), '1.0.8', 'lib, 'libsodium.dylib'),
+('lib/libsodium.dylib',
+os.path.join(get_homebrew_path( formula='libsodium' ), '1.0.8', 'lib', 'libsodium.dylib'),
  'BINARY'),])
 print(a.binaries)
 
