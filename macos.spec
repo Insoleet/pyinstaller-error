@@ -13,14 +13,16 @@ a = Analysis(['reproducing_nacl.py'],
              win_no_prefer_redirects=False,
              win_private_assemblies=False,
              cipher=block_cipher)
-
+print(a.binaries)
 a.binaries = a.binaries - TOC([
  ('libsodium.so', None, None),])
+print(a.binaries)
 
 a.binaries = a.binaries + TOC([
 ('libsodium.dylib',
 os.path.join(get_homebrew_path( formula='libsodium' ), '1.0.8', 'lib, 'libsodium.dylib'),
  'BINARY'),])
+print(a.binaries)
 
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
