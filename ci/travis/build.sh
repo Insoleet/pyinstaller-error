@@ -10,6 +10,7 @@ pip install pylibscrypt
 pip install base58
 pip install pyinstaller
 
-pyinstaller reproducing_nacl.py --debug
-pyinstaller reproducing_pylibscrypt.py --debug
+pyi-makespec reproducing_nacl.py --debug
+cat *.spec
+#pyinstaller reproducing_pylibscrypt.py --debug
 
